@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <!-- Scripts -->
+  <script src="assets/js/app.js" defer></script>
+  <title>Analog Clock</title>
+</head>
+<body>
+  <div class="switch-mode">
+    <h3>Light </h3>
+    <label for="switchMode">
+      <input type="checkbox" id="switchMode" onclick="handleChange()">
+      <span class="check"></span>
+    </label>
+  </div>
+  <div class="clock">
+    <div class="hour">
+      <div class="hr" id="hr"></div>
+    </div>
+    <div class="min">
+      <div class="mn" id="mn"></div>
+    </div>
+    <div class="sec">
+      <div class="sc" id="sc"></div>
+    </div>
+  </div>
+</body>
+</html>
