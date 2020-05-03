@@ -5,6 +5,7 @@
   --hr-color: #848484;
   --mn-color: #dcdcdc;
   --sc-color: #ff6767;
+  --link-color: #ff105e;
 }
 *{
   margin: 0;
@@ -151,3 +152,19 @@ body{
   }
 }
 
+footer{
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  h2{
+    font-size: 20px;
+    a{
+      color: var(--link-color);
+      text-decoration: none;
+      transition: 0.5s;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}

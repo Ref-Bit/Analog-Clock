@@ -5,6 +5,7 @@ const mn = document.querySelector('#mn');
 const sc = document.querySelector('#sc');
 const switchMode = document.querySelector('#switchMode');
 const switchModeText = document.querySelector('.switch-mode h3');
+const footer = document.querySelector('footer h2');
 
 setInterval(() => {
   let day = new Date();
@@ -31,6 +32,8 @@ setInterval(() => {
     hr.style.setProperty("--hr-color", "#fff")
     mn.style.setProperty("--mn-color", "#fff")
     sc.style.setProperty("--sc-color", "#ff105e")
+
+    footer.style.color = '#fff'
   } else {
     switchModeText.innerText = 'Light'
 
@@ -46,5 +49,7 @@ setInterval(() => {
     hr.style.setProperty("--hr-color", "#848484")
     mn.style.setProperty("--mn-color", "#dcdcdc")
     sc.style.setProperty("--sc-color", "#ff6767")
+
+    footer.style.color = '#000'
   }
 }
